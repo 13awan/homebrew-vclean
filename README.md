@@ -4,6 +4,8 @@
 
 本仓库通过 [Homebrew](https://brew.sh) 分发该应用，作为第三方 Tap 提供安装、升级与卸载。
 
+![vClean 主界面：按目录分类展示 Xcode 缓存占用，支持模拟器等条目排序、访达定位与安全删除](./app.png)
+
 ## 功能特性
 
 - 扫描并展示 Xcode 相关目录占用：DerivedData、Archives、Simulators、SwiftUI 预览、Playground、DeviceSupport
@@ -22,6 +24,8 @@
 
 ```bash
 brew tap 13awan/vclean
+```
+```bash
 brew install --cask v-clean
 ```
 
@@ -42,13 +46,3 @@ brew uninstall --cask v-clean
 ```bash
 brew untap 13awan/vclean
 ```
-
-## 发布新版本
-
-在 vClean 源码仓库执行 `fastlane release` 生成已签名、已公证的 `dist/vClean.app` 后，在本仓库运行：
-
-```bash
-./scripts/release.sh "/path/to/vClean.app"
-```
-
-脚本会打包 zip、更新 Cask 中的版本号与 SHA256，随后提交并推送即可。
