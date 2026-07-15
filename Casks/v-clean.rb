@@ -1,6 +1,6 @@
 cask "v-clean" do
-  version "1.4"
-  sha256 "34eb9ac7be2c35e6adba191579f7d3cbe97f0072978cb206d4d35ac21aed3f4f"
+  version "1.5"
+  sha256 "bfe43afaae1ec3e7d2c0ce0ec26642b4afc587bdd5b11124447bede3841fee42"
 
   url "https://github.com/13awan/homebrew-vclean/raw/main/releases/download/v#{version}/vClean.zip"
   name "vClean"
